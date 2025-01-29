@@ -4,7 +4,7 @@ A Django API that returns user info, current UTC time, and GitHub repo URL.
 
 ## API Endpoints
 
-- **Production URL:** `https://web-production-08f1e.up.railway.app/`
+- **Production URL:** `https://backendhngzero.onrender.com`
 - **Local URL:** `http://localhost:8000/`
 
 ## Response Example
