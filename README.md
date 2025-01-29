@@ -12,7 +12,7 @@ A Django API that returns user info, current UTC time, and GitHub repo URL.
 ```json
 {
     "email": "daryjoe765@gmail.com",
-    "current_datetime": "2025-01-29T16:14:28.507842+00:00",
+    "current_datetime": "2025-01-29T18:25:11Z",
     "github_url": "https://github.com/darad124/hng_stage0"
 }
 ```
