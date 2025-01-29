@@ -22,12 +22,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-4x6wn2y&9nw4=9#kj3bq7q$_6#kj3=m@f8q$_6#kj3=m@f8q')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
+DEBUG = False
 
 ALLOWED_HOSTS = [
+    '.vercel.app',  # Allow Vercel domains
+    '.now.sh',      # Allow Vercel domains
     'localhost',
-    '127.0.0.1',
-    '.onrender.com',  # Allow all render.com subdomains
+    '127.0.0.1'
 ]
 
 # Application definition
@@ -105,3 +106,6 @@ SECURE_BROWSER_XSS_FILTER = True
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Add at the bottom
+STATICFILES_DIRS = []
