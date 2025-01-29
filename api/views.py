@@ -6,8 +6,8 @@ from django.utils import timezone
 
 def get_info(request):
     data = {
-        "email": "your-email@example.com",  # Replace with your HNG email
+        "email": "daryjoe765@gmail.com",
         "current_datetime": timezone.now().isoformat(),
-        "github_url": "https://github.com/yourusername/hng_stage0"
+        "github_url": "https://github.com/darad124/hng_stage0"
     }
     return JsonResponse(data)
