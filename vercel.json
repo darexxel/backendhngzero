@@ -1,12 +1,16 @@
 {
     "builds": [{
-        "src": "hng_stage0/wsgi.py",
-        "use": "@vercel/python"
+      "src": "hng_stage0/wsgi.py",
+      "use": "@vercel/python"
     }],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "hng_stage0/wsgi.py"
-        }
+      {
+        "src": "/api/?",
+        "dest": "hng_stage0/wsgi.py"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "hng_stage0/wsgi.py"
+      }
     ]
-}
+  }
