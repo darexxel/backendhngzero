@@ -26,17 +26,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-4x6wn2y&9nw4=9#kj3bq7q$_6#kj3=m@f8q$_6#kj3=m@f8q')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = [
-    'web-production-08f1e.up.railway.app',
     'localhost',
     '127.0.0.1',
-    '.railway.app',  # Allow all railway.app subdomains
-    '*',  # Temporarily allow all hosts for testing
+    '.onrender.com',  # Allow all render.com subdomains
 ]
 
 
@@ -143,7 +141,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Security settings for production
-SECURE_SSL_REDIRECT = False  # Set to True if you have SSL configured
+SECURE_SSL_REDIRECT = False  # Render handles SSL
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_BROWSER_XSS_FILTER = True

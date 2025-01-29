@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: hng-stage0
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn hng_stage0.wsgi:application
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: django-insecure-4x6wn2y&9nw4=9#kj3bq7q$_6#kj3=m@f8q$_6#kj3=m@f8q
+      - key: DEBUG
+        value: False 
