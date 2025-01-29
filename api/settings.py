@@ -1,0 +1,1 @@
+ALLOWED_HOSTS = ['your-domain.com', 'localhost'] 
