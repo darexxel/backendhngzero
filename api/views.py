@@ -1,12 +1,10 @@
-from django.shortcuts import render
-
+# api/views.py
 
 from django.http import JsonResponse
 from django.utils import timezone
-from datetime import datetime
 
 def get_info(request):
-    # Get current UTC time
+    # Get current UTC time in ISO 8601 format
     current_time = timezone.now().strftime('%Y-%m-%dT%H:%M:%SZ')
     
     data = {
