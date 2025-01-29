@@ -8,4 +8,5 @@ services:
       - key: DJANGO_SECRET_KEY
         value: django-insecure-4x6wn2y&9nw4=9#kj3bq7q$_6#kj3=m@f8q$_6#kj3=m@f8q
       - key: DEBUG
-        value: False 
+        value: "False"
+    pythonVersion: 3.11.0 
