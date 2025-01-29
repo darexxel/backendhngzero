@@ -30,7 +30,9 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'web-production-08f1e.up.railway.app',
     'localhost',
-    '127.0.0.1'
+    '127.0.0.1',
+    '.railway.app',  # Allow all railway.app subdomains
+    '*',  # Temporarily allow all hosts for testing
 ]
 
 

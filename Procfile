@@ -1,1 +1,1 @@
-web: gunicorn hng_stage0.wsgi 
+web: gunicorn hng_stage0.wsgi --bind 0.0.0.0:$PORT 
