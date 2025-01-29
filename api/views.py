@@ -12,6 +12,6 @@ def get_info(request):
     data = {
         "email": "daryjoe765@gmail.com",
         "current_datetime": current_time,  # Dynamic UTC time
-        "github_url": "https://github.com/darexxel/hng_stage0"  # Updated GitHub username
+        "github_url": "https://github.com/darexxel/backendhngzero"  # Updated to actual repo URL
     }
     return JsonResponse(data, json_dumps_params={'separators': (',', ':')})  # Minimize JSON size
